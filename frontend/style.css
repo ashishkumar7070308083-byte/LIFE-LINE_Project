@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #0b1120;
+    color: #e2e8f0;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 28px;
+    background-color: #111827;
+    border-bottom: 2px solid #ef4444;
+}
+
+.brand h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+    color: #f87171;
+}
+
+.brand p {
+    margin: 4px 0 0;
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+
+.status-badge {
+    background-color: #065f46;
+    color: #a7f3d0;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 20px;
+    padding: 22px;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.panel {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 18px;
+}
+
+.panel h2 {
+    margin: 0 0 12px;
+    font-size: 1.05rem;
+    color: #38bdf8;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 8px;
+}
+
+.panel h3 {
+    margin: 16px 0 8px;
+    font-size: 0.92rem;
+    color: #cbd5e1;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+}
+
+.section-header h2 {
+    margin: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.section-header .btn-small {
+    background-color: #0f766e;
+}
+
+.section-header .btn-small:hover {
+    background-color: #0d9488;
+}
+
+label {
+    display: block;
+    font-size: 0.82rem;
+    color: #94a3b8;
+    margin-top: 8px;
+}
+
+input, select {
+    width: 100%;
+    padding: 9px 10px;
+    margin-top: 4px;
+    border-radius: 7px;
+    border: 1px solid #475569;
+    background-color: #0f172a;
+    color: #f8fafc;
+    font-size: 0.9rem;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.btn-primary {
+    background-color: #dc2626;
+}
+
+.btn-primary:hover {
+    background-color: #b91c1c;
+}
+
+.btn-secondary {
+    background-color: #0284c7;
+}
+
+.btn-secondary:hover {
+    background-color: #0369a1;
+}
+
+.btn-small {
+    width: auto;
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background-color: #475569;
+}
+
+.btn-small:hover {
+    background-color: #64748b;
+}
+
+.inline-group {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.inline-group input {
+    margin-top: 0;
+}
+
+.inline-group button {
+    width: auto;
+    margin-top: 0;
+    padding: 9px 14px;
+}
+
+.queue-list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-top: 6px;
+}
+
+.queue-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f172a;
+    border-left: 4px solid #f59e0b;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 0.84rem;
+}
+
+.sev-tag {
+    background-color: #7c2d12;
+    color: #fed7aa;
+    padding: 2px 7px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0.76rem;
+}
+
+.info-box {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #0f172a;
+    border-radius: 7px;
+    border: 1px solid #334155;
+    font-size: 0.84rem;
+    color: #93c5fd;
+}
+
+canvas {
+    width: 100%;
+    background-color: #0f172a;
+    border-radius: 10px;
+    border: 1px solid #334155;
+}
+
+.route-banner {
+    margin-top: 12px;
+    padding: 12px 14px;
+    background-color: #0f172a;
+    border-left: 4px solid #10b981;
+    border-radius: 7px;
+    font-size: 0.92rem;
+    line-height: 1.45;
+}
+
+.bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-top: 14px;
+}
+
+.log-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.log-header h3 {
+    margin: 0;
+}
+
+.clean-list {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.clean-list li {
+    background-color: #0f172a;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 0.83rem;
+    border: 1px solid #1e293b;
+}
+
+@media (max-width: 960px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+    .bottom-grid {
+        grid-template-columns: 1fr;
+    }
+}

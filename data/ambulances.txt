@@ -1,0 +1,3 @@
+AMB-CH01 Gurpreet_Singh 0 1
+AMB-CH02 Simran_Kaur 2 1
+AMB-CH03 Harpreet_Gill 1 0

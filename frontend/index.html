@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIFE-LINE | Chandigarh - Mohali - CGC Emergency System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand">
+            <h1>LIFE-LINE</h1>
+            <p>C++ DSA Engine • Chandigarh – Mohali – CGC Emergency Response</p>
+        </div>
+        <span id="cppSyncBadge" class="status-badge">C++ DSA ENGINE READY</span>
+    </header>
+
+    <main class="layout">
+        <aside class="panel">
+            <h2>1. Emergency Triage (Max-Heap)</h2>
+            <label for="patientInput">Patient / Incident</label>
+            <input type="text" id="patientInput" placeholder="e.g., Amandeep_Kaur Cardiac_Arrest">
+
+            <label for="zoneSelect">Target Zone</label>
+            <select id="zoneSelect">
+                <option value="1">Zone 1 — Mohali Phase-7</option>
+                <option value="2">Zone 2 — Kharar Junction</option>
+                <option value="3">Zone 3 — PGI / Sector-12 Chd</option>
+                <option value="4" selected>Zone 4 — ISBT Sector-17 Chd</option>
+            </select>
+
+            <label for="severityInput">Severity (1 - 10)</label>
+            <input type="number" id="severityInput" min="1" max="10" value="10">
+
+            <button class="btn-secondary" onclick="addIncident()">+ Enqueue Emergency</button>
+            <button class="btn-primary" onclick="dispatchHighest()">Dispatch Top Priority (Dijkstra)</button>
+
+            <h3>Active Priority Queue</h3>
+            <div id="queueContainer" class="queue-list"></div>
+
+            <h2>2. Ambulance Lookup (Hash Table)</h2>
+            <div class="inline-group">
+                <input type="text" id="ambLookupInput" value="AMB-CH01" placeholder="AMB-CH01">
+                <button class="btn-secondary" onclick="lookupAmbulance()">Search</button>
+            </div>
+            <div id="ambResult" class="info-box"></div>
+        </aside>
+
+        <section class="panel map-panel">
+            <div class="section-header">
+                <h2>3. Road Network &amp; Green Corridor</h2>
+                <button class="btn-small" onclick="toggleMST()">Toggle Prim's MST</button>
+            </div>
+            <canvas id="cityMapCanvas" width="760" height="390"></canvas>
+            <div id="routeSummary" class="route-banner">
+                Ready: Click "Dispatch Top Priority" to animate ambulance along Dijkstra's shortest green corridor.
+            </div>
+
+            <div class="bottom-grid">
+                <div>
+                    <h3>Hospitals (Sorted by Beds)</h3>
+                    <ul id="hospitalList" class="clean-list"></ul>
+                </div>
+                <div>
+                    <div class="log-header">
+                        <h3>Dispatch Logs (LinkedList)</h3>
+                        <button class="btn-small" onclick="undoLastLog()">Undo Last</button>
+                    </div>
+                    <ul id="logList" class="clean-list"></ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

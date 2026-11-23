@@ -1,0 +1,4 @@
+INC-1 10 Amandeep_Kaur 4 Cardiac_Arrest
+INC-2 7 Karan_Sharma 2 Road_Accident
+INC-3 9 Jaspreet_Sidhu 3 Fire_Burn
+INC-4 4 Neha_Verma 1 Fracture
